@@ -1,0 +1,35 @@
+{
+    "name": "stanbic/laravel-monitoring",
+    "description": "A laravel package for monitoring with open -telemetry",
+    "type": "library",
+    "require": {
+        "promphp/prometheus_client_php": "^2.11",
+        "stanbic/laravel-opentelemetry": "^1.0.1",
+        "symfony/http-client": "^7.1",
+        "nyholm/psr7": "^1.8"
+    },
+    "repositories": [
+    {
+        "type": "vcs",
+        "url": "https://gitlab.standardbank.co.za/C875281/laravel-opentelemetry.git"
+    }
+],
+    "autoload": {
+        "psr-4": {
+            "Stanbic\\LaravelMonitoring\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Stanbic\\LaravelMonitoring\\LaravelMonitoringServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
