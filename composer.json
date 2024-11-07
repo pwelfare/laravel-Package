@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "promphp/prometheus_client_php": "^2.11",
-        "stanbic/laravel-opentelemetry": "^2.0.0",
+        "stanbic/laravel-opentelemetry": "^3.0.0",
         "symfony/http-client": "^7.1",
         "nyholm/psr7": "^1.8"
     },
